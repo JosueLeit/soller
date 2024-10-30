@@ -5,24 +5,36 @@ import PurpleButton from './ui/PurpleButton'
 
 const Header = () => {
   return (
-      <header className="w-full md:px-12 py-6 flex items-center justify-between z-50">
-        <div className="flex items-center space-x-10">
-          <Link href="/" className="text-3xl text-font-blacked font-bold">
-            <p>soller</p>
+    <header className="w-full px-4 flex items-center gap-8 md:px-12 py-6 relative z-10">
+        <Link href="/" className="text-3xl text-font-blacked font-bold">
+          soller
+        </Link>
+      <div className="container flex items-center justify-between">
+ 
+        <nav className="hidden md:flex space-x-4">
+          <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">
+            Products
           </Link>
-          <nav className="hidden md:flex space-x-4">
-            <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">Products</Link>
-            <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">Solutions</Link>
-            <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">Services</Link>
-            <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">Configure</Link>
-          </nav>
+          <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">
+            Solutions
+          </Link>
+          <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">
+            Services
+          </Link>
+          <Link href="#" className="text-font-blacked font-medium hover:text-orange-600">
+            Configure
+          </Link>
+        </nav>
+
+        <div className="flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-2 gap-4">
+            <Headphone className="text-sky-700" />
+            <p className="text-sky-700 font-medium">555 818 282</p>
+            <PurpleButton />
+          </div>
         </div>
-        <div className="flex items-center space-x-4 gap-4 z-20">
-          <Headphone className="text-sky-700 font-medium hidden md:block"/>
-          <p className="text-sky-700 font-medium hidden md:block">555 818 282</p>
-          <PurpleButton />
-        </div>
-      </header>
+      </div>
+    </header>
   )
 }
 

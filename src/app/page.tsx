@@ -6,17 +6,21 @@ import Footer from "@/components/Footer";
 import Services from "@/components/Services";
 import SystemFeatures from "@/components/SystemFeatures";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
+import EmblaCarousel from "../components/EmblaCarousel";
 
 export default function Home() {
   return (
-    <React.Fragment>
-   <Header />
-   <Hero />
-   <PickTheSun />
-   <Services />
-   <SystemFeatures />
-   <TestimonialCarousel />
-   <Footer />
-    </React.Fragment>
+  <>
+    <Header />
+    <Hero />
+    <EmblaCarousel />
+    <PickTheSun />
+    <Services />
+    <SystemFeatures />
+    <TestimonialCarousel />
+    <Footer />
+</>
+
+    
   );
 }
