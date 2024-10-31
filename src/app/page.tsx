@@ -7,6 +7,7 @@ import Services from "@/components/Services";
 import SystemFeatures from "@/components/SystemFeatures";
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import EmblaCarousel from "../components/EmblaCarousel";
+import SecondHero from "../components/SecondHero";
 
 export default function Home() {
   return (
@@ -18,9 +19,8 @@ export default function Home() {
     <Services />
     <SystemFeatures />
     <TestimonialCarousel />
+    <SecondHero />
     <Footer />
-</>
-
-    
+</> 
   );
 }

@@ -3,7 +3,6 @@
 import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
 import { EmblaOptionsType } from 'embla-carousel'
-import Autoplay from 'embla-carousel-autoplay'
 import { ArrowLeft, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import TestimonialCard from './TestimonialCard'
@@ -22,7 +21,7 @@ export default function TestimonialCarousel({
   const [emblaRef, emblaApi] = useEmblaCarousel({
     ...options,
     dragFree: true,
-  }, [Autoplay()])
+  }, [])
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -33,7 +32,7 @@ export default function TestimonialCarousel({
   }, [emblaApi])
 
   return (
-    <div className="bg-purple-900 text-white min-h-screen p-8">
+    <div className="bg-purple-900 text-white p-8 py-28">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           <div className="space-y-4">
@@ -58,7 +57,7 @@ export default function TestimonialCarousel({
                   className={`pl-4 flex-wrap${
                     index === 0 
                       ? 'h-[490px] w-[364px]' 
-                      : 'w-[364px] h-[442px]'
+                      : 'h-[442px] w-[364px]'
                   }`}
                 >
                   <TestimonialCard {...testimonial} />
@@ -67,7 +66,7 @@ export default function TestimonialCarousel({
             </div>
           </div>
 
-          <div className="top-1/2 transform -translate-y-1/2 left-0 flex gap-2">
+          <div className="top-1/2 transform -translate-y-1/2 left-0 flex gap-8 mt-24">
             <Button
               variant="outline"
               size="icon"
