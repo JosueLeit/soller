@@ -6,31 +6,31 @@ import logoContainer from '../../public/assets/LogoContainer.png';
 const Footer = () => {
   return (
     <React.Fragment>
-      {/* <footer className="flex items-center justify-between bg-white text-black px-20 h-24"> */}
-      <footer className="w-full flex flex-col md:flex-row items-center justify-between bg-white text-black px-4 md:px-8 py-6">
-        <div className="flex items-center container gap-">
-            <Link href="/" className="flex items-center text-black my-auto gap-5">
-              <Image
-                src={logoContainer}
-                alt="Solar power device" 
-                width={126.81} 
-                height={32} 
-                // className="my-auto"
-                />
-                <p>
-                  &copy; 2023 Soller, Inc. All rights reserved.
-                </p>
-            </Link>
-            
+      <footer className="grid w-full border-t bg-white px-4 py-6 md:px-8">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 sm:flex-row">
+            <div className="flex sm:flex-col items-center gap-2">
+              <Link href="/" className="flex items-center text-black my-auto gap-5">
+                  <Image
+                    src={logoContainer}
+                    alt="Solar power device" 
+                    width={126.81} 
+                    height={32} 
+                    className="h-8 w-auto"
+                    />
+                    <p>
+                      &copy; 2023 Soller, Inc. All rights reserved.
+                    </p>
+                </Link>
+            </div>
+          
+            <div className="flex flex-col md:flex-row justify-between items-center">
+                <nav className="flex justify-center gap-4">
+                  <Link href="#" className="hover:text-orange-500">Terms</Link>
+                  <Link href="#" className="hover:text-orange-500">Privacy</Link>
+                  <Link href="#" className="hover:text-orange-500">Support</Link>
+                </nav>
+            </div>
           </div>
-        <div className="flex flex-col md:flex-row justify-between items-center">
-            <nav className="flex justify-center gap-4">
-              {/* <Link href="#" className="hover:text-orange-500">Home</Link> */}
-              <Link href="#" className="hover:text-orange-500">Terms</Link>
-              <Link href="#" className="hover:text-orange-500">Privacy</Link>
-              <Link href="#" className="hover:text-orange-500">Support</Link>
-            </nav>
-        </div>
       </footer>
     </React.Fragment>
   )

@@ -11,7 +11,7 @@ export default function Services() {
               alt="Technician working with solar panels" 
               width={500}
               height={950}
-              className="w-full max-w-[22.375rem] sm:max-w-none sm:h-auto object-cover"
+              // className="w-full max-w-[22.375rem] sm:max-w-none sm:h-auto object-cover"
             />
           </div>
 

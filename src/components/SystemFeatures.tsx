@@ -3,17 +3,7 @@ import SystemFeature from '../../public/assets/SystemFeatures.png';
 
 export default function SystemFeatures() {
   return (
-     <section className="flex flex-col-reverse lg:flex-row gap-16 items-center overflow-hidden bg-white py-12 lg:py-20">
-        
-        <div className="flex justify-center w-full lg:w-auto order-10">
-          <Image 
-            src={SystemFeature} 
-            alt="Technician working with solar panels" 
-            width={500}
-            height={950}
-            className="w-full max-w-[22.375rem] sm:max-w-none sm:h-auto object-cover"
-          />
-        </div>
+     <section className="flex flex-col lg:flex-row gap-16 items-center overflow-hidden bg-white py-12 lg:py-20">
         
         <div className="space-y-12 px-8 lg:px-16">
           <div className="text-center lg:text-left">
@@ -53,6 +43,15 @@ export default function SystemFeatures() {
               </p>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center w-full lg:w-auto">
+          <Image 
+            src={SystemFeature} 
+            alt="Technician working with solar panels" 
+            width={500}
+            height={950}
+            // className="w-full max-w-[22.375rem] sm:max-w-none sm:h-auto object-cover"
+          />
         </div>
     </section>
   )
