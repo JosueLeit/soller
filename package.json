@@ -2,13 +2,6 @@
   "name": "sollerproject",
   "version": "0.1.0",
   "private": true,
-  "pnpm": {
-    "overrides": {
-      "react-is": "19.0.0-rc-a960b92c-20240819",
-      "react": "19.0.0-rc-a960b92c-20240819",
-      "react-dom": "19.0.0-rc-a960b92c-20240819"
-    }
-  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -23,11 +16,11 @@
     "embla-carousel": "^8.3.0",
     "embla-carousel-autoplay": "^8.3.0",
     "embla-carousel-react": "^8.3.0",
-    "framer-motion": "12.0.0-alpha.0",
+    "framer-motion": "^11.11.17",
     "lucide-react": "^0.453.0",
     "next": "15.0.0",
-    "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7"
   },
