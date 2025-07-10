@@ -1,8 +1,9 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { type Testimonial } from "./TestimonialData";
+import { memo } from "react";
 
-export default function TestimonialCard({
+const TestimonialCard = memo(function TestimonialCard({
   content,
   image,
   name,
@@ -35,4 +36,6 @@ export default function TestimonialCard({
       </CardContent>
     </Card>
   )
-}
+});
+
+export default TestimonialCard;
